@@ -28,7 +28,12 @@
 #define RXD PD0
 #define TXD PD1
 #define XCK PD4
-// TODO: busy signal pins, TX & RX
+
+// Ready To Send (IN; remote device signals ready to receive data)
+#define RTS PD2
+
+// Clear To Send (OUT; this uC signals ready to receive data)
+#define CTS PD3
 
 #define ID_KEY_CODE 0xFE
 

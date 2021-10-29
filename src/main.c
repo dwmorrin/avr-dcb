@@ -17,7 +17,7 @@ int main()
   while (1)
   {
     frame.voices[0].gate = !frame.voices[0].gate;
-    DCB_send_frame(&frame);
+    DCB_send(&frame);
     _delay_ms(500);
   }
 }
